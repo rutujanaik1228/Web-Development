@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+    /* multiple selection   ","   */
+         h1,h2,h3{
+            background-color: blueviolet;
+           color: rgb(240, 233, 224);
+    }
+    /* combinator selectors " "    */
+    ol li{
+        background-color: aquamarine;
+    }
+    /* Direct child selectors ">"   */
+    header > a{
+        background-color: rgba(165, 204, 207, 0.438);
+    }
+    
+    /* siblings    */
+    /*   "~"   */
+    img~p{
+        background-color: rgb(136, 46, 46);
+    }
+        /*      "+"       */
+        img+p{
+        background-color: rgb(26, 145, 65);
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>hi</h1>
+    <h2>hello</h2>
+    <h3>how are you?</h3>
+    <ol>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+    <header>
+        <a href="#">Google</a>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <a href="#">Logo</a>
+                
+            </ul>
+        </nav>
+        <a href="#">Yahoo</a>
+    </header>
+    <div>
+        <img src="#" alt="">
+        <p>change me</p>
+        <p>change me too</p>
+        <div>
+            <p>change me</p>
+        </div>
+        
+        <p>change me tooooooooooooooo</p>
+
+    </div>
+   
+</body>
+</html>
