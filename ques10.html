@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Centered Div with Image and Description</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: white;
+    }
+
+    .Lotus {
+        opacity: 0.5;
+        width: 550px;
+        height: 300px;
+      background-color: #494949;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: blanchedalmond;
+      font-family: Cambria;
+      font-size: medium;
+    }
+
+    .Lotus img {
+          height: 200px;
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .Lotus p {
+      margin-top: 10px;
+    }
+    .Hibiscus {
+        opacity: 0.5;
+    margin: 20px;
+        width: 550px;
+        height: 300px;
+      background-color: #494949;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: blanchedalmond;
+      font-family: Cambria;
+      font-size: medium;
+    }
+
+    .Hibiscus img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      height: 200px;
+      width: 300px;
+    }
+
+    .Hibiscus p {
+      margin-top: 10px;
+    }
+    .Lotus:hover{
+        opacity: 1;
+    }
+    .Hibiscus:hover{
+        opacity: 1;
+    }
+  </style>
 </head>
 <body>
-    <h1 align="center">Difference between HTML and HTML5</h1>
-    <table align="center" border="1">
-        <thead>
-            <th>HTML</th>
-            <th>HTML5</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Relies on third-party plugins (e.g., Flash) for multimedia content
-                </td>
-                <td>
-                    Native support for multimedia elements with &lt;audio&gt; and &lt;video&gt; tags
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Limited set of semantic tags 
-                </td>
-                <td>
-                    Introduces new semantic tags like &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt; , etc.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Basic form controls and limited validation options
-                </td>
-                <td>
-                    Introduces new input types (date, email, url, etc.) and form validation attributes (required, pattern, etc.)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Lacks built-in support for offline storage and application caching
-                </td>
-                <td>
-                    Provides offline storage with localStorage and sessionStorage, and offline application caching
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Older versions may have inconsistent support across 
-                </td>
-                <td>
-                Improved browser compatibility and support for modern features and APIs
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <div class="Lotus">
+    <img src="./download (1).jpeg" alt="Centered Image">
+    <p>Nelumbo nucifera, also known as sacred lotus, Laxmi lotus, Indian lotus, or simply lotus, is one of two extant species of aquatic plant in the family Nelumbonaceae. It is sometimes colloquially called a water lily, though this more often refers to members of the family Nymphaeaceae.</p>
+  </div>
+  <div class="Hibiscus">
+    <img src="./download2.jpeg" alt="">
+    <P>Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large, comprising several hundred species that are native to warm temperate, subtropical and tropical regions throughout the world. </P>
+</div>
 </body>
 </html>
